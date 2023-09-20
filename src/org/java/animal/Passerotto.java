@@ -20,21 +20,20 @@ public class Passerotto extends Animale implements IVolante {
         System.out.println("Mangia semi.");
     }
 
-	
-
-	
-	 
-
 	@Override
 	public void vola() {
 		System.out.println("Sto volando!!!");
-		
 	}
 
 	@Override
-	public String toString() {
-		 
+	public String toString() {		 
 		return super.toString();
+	}
+
+	@Override
+	public void carnivoro() {
+		System.out.println("Erbivoro");
+		
 	}
 	 
 

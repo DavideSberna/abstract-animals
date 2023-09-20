@@ -11,7 +11,6 @@ public class Delfino extends Animale implements INuotante{
 	}
 	 
 	
-	
 	@Override
 	public void verso() {
         System.out.println("Fischio del delfino!");
@@ -21,22 +20,20 @@ public class Delfino extends Animale implements INuotante{
     public void mangia() {
         System.out.println("Mangia pesce.");
     }
-	
-
-	
  
 	@Override
 	public void nuota() {
-		System.out.println("Sto nuotando!!!");
-		
+		System.out.println("Sto nuotando!!!");	
 	}
 
-	 
-	
 	@Override
-	public String toString() {
-		 
+	public String toString() {		 
 		return super.toString();
+	}
+
+	@Override
+	public void carnivoro() {
+		System.out.println("Carnivoro");	
 	}
 
 	 

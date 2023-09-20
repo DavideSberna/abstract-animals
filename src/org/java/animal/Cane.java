@@ -32,6 +32,12 @@ public class Cane extends Animale implements INuotante{
 		return super.toString();
 	}
 
+	@Override
+	public void carnivoro() {
+		System.out.println("Carnivoro");	
+		
+	}
+
 	
 	
 	

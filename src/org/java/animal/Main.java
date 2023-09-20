@@ -5,10 +5,12 @@ public class Main {
 	public static interface IVolante {
 	    void vola();
 	}
-
 	
 	public static interface INuotante {
 	    void nuota();
+	}
+	public static interface Carnivoro {
+	    void carnivoro();
 	}
 
 	public static void main(String[] args) {
@@ -23,6 +25,12 @@ public class Main {
 		
 		
 		for(int i = 0; i < animali.length; i++) {
+			System.out.println("\n-------------------------");
+			System.out.println("");
+			System.out.println("Caratteristiche animale n. " + (i +1));
+			System.out.println("");
+			
+			
 			Animale animale = animali[i]; 
 			
 			System.out.print("Animale  -->  ");
@@ -37,10 +45,13 @@ public class Main {
 			System.out.print("Cosa può fare  -->  ");
 			 if (animale instanceof INuotante) {
 			        faiNuotare((INuotante) animale);
+			        System.out.print("Tipo di animale  -->  ");
+			        faiMangiare(animale);
 			    } else if (animale instanceof IVolante) {
 			        faiVolare((IVolante) animale);
+			        System.out.print("Tipo di animale  -->  ");
+			        faiMangiare(animale);
 			    }
-			System.out.println("\n---------------\n");
 			 
 		}
 		
@@ -51,10 +62,13 @@ public class Main {
     public static void faiVolare(IVolante animale) {
         animale.vola();
     }
-
      
     public static void faiNuotare(INuotante animale) {
         animale.nuota();
+    }
+    
+    public static void faiMangiare(Carnivoro animale) {
+        animale.carnivoro();
     }
 
 }

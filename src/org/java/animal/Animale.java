@@ -1,16 +1,14 @@
 package org.java.animal;
 
- 
-public abstract class Animale {
+import org.java.animal.Main.Carnivoro;
+
+public abstract class Animale implements Carnivoro {
 	private String nome;
-	
 	
 	public Animale(	String nome) {
 		setNome(nome);
 	}
 	
-	 
-    
 	public String getNome() {
 		return nome;
 	}
@@ -23,12 +21,11 @@ public abstract class Animale {
 	public void dormi() {
         System.out.println("Zzz");
     }
+	
 	abstract void verso();
     abstract void mangia();
 
     
-    
-    @Override
     public String toString() {
     	return getNome();
     }

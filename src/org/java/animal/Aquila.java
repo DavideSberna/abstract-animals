@@ -20,22 +20,20 @@ public class Aquila extends Animale implements IVolante{
         System.out.println("Mangia piccoli animali.");
     }
 	
-
-	
-	 
-
-	 
-
 	@Override
 	public void vola() {
-		System.out.println("Sto volando!!!");
-		
+		System.out.println("Sto volando!!!");		
 	}
 	
 	@Override
-	public String toString() {
-		 
+	public String toString() {	 
 		return super.toString();
+	}
+
+	@Override
+	public void carnivoro() {
+		System.out.println("Carnivoro");
+		
 	}
 
 	 
